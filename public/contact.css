@@ -94,14 +94,14 @@ p.address {
 /* Footer stil ayarları */
 footer {
     background-color: #98C1D9;
-    color: #ffffff;
+    color: #ffffff !important; /* !important ekleyerek diğer kuralları geçersiz kılabilirsiniz */
     text-align: center;
-    padding: 15px 0;
+    padding: 1px 0;
     font-size: 14px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Alt gölge */
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
     border-top: 1px solid #ddd;
 }
 
