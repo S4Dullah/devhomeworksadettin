@@ -1,0 +1,103 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Lucida Console', Monospace;
+    background-color: #DEEFB7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header stil ayarları */
+header {
+    background-color: #98C1D9;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Daha belirgin bir header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Menü öğelerini ortala */
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+header ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Ana içerik stil ayarları */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+    letter-spacing: 1.2px;
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+    border: 3px solid #333;
+    border-radius: 10px; /* Daha yumuşak köşeler */
+    width: auto;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif bir gölge efekti */
+}
+
+/* Footer stil ayarları */
+footer {
+    background-color: #98C1D9;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Alt gölge */
+    border-top: 1px solid #ddd;
+}
+
+/* Mobil uyumlu stil */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+    }
+    
+    header ul li {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+
+    footer {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+}

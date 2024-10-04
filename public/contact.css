@@ -1,0 +1,123 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Lucida Console', Monospace;
+    background-color: #DEEFB7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header stil ayarları */
+header {
+    background-color: #98C1D9;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Daha belirgin bir header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Menü öğelerini ortala */
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+header ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Başlık stil ayarları */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+}
+
+/* İletişim metni stil ayarları */
+p {
+    color: #666;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+/* Sosyal medya bağlantıları stil ayarları */
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: #98C1D9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 250px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #333;
+}
+
+/* Adres stil ayarları */
+p.address {
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Footer stil ayarları */
+footer {
+    background-color: #98C1D9;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Alt gölge */
+    border-top: 1px solid #ddd;
+}
+
+/* Mobil uyumlu stil */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p, .social-links {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+}
